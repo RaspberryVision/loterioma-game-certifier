@@ -1,0 +1,13 @@
+{
+    "name": "loteriomagamecertifier",
+    "version": "0.0.1",
+    "description": "Certifier worker for Loterioma games engine.",
+    "author": "Rafal Malik <kontakt@raspberryvision.pl>",
+    "main": "worker.js",
+    "scripts": {
+        "start": "node app.js"
+    },
+    "dependencies": {
+        "express": "^4.16.1"
+    }
+}
