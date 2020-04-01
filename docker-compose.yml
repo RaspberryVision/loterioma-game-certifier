@@ -1,0 +1,20 @@
+version: '3.5'
+services:
+    loterioma_game_certifier:
+        build: 
+          dockerfile: .docker/app/Dockerfile
+          context: .
+        container_name: loterioma_game_certifier
+        stdin_open: true
+        tty: true
+        ports:
+          - 9908:8080
+        volumes:
+          - ./src:/usr/src/app
+        networks:
+          - my-proxy-net
+
+networks:
+    my-proxy-net:
+        external: true
+        name: loterioma-net
